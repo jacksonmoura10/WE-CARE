@@ -1,0 +1,164 @@
+/* Reseta e fontes */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* Cabeçalho */
+header {
+    background-color: #f4f4f4;
+    padding: 20px;
+  
+}
+
+
+/* Links do menu */
+a {
+    color: #989D9C;
+    text-decoration: none;
+    font-weight: bold;
+    margin: 15px;
+}
+
+/* Botão de login (btn-secondary) */
+.btn-secondary {
+    width: 120px;
+    height: 41px;
+    border-radius: 50px;
+    color: #FFFFFF;
+    font-size: 16px;
+    font-weight: 600;
+    background-color: rgba(51, 0, 255, 0.703);
+    border: none;
+    cursor: pointer;
+}
+
+.btn-secondary:hover {
+    background-color: #3300ff;
+}
+
+/* Container principal */
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 80%;
+    max-width: 1100px;
+    margin: 50px auto 0; /* Centraliza e dá espaço no topo */
+}
+
+/* Coluna da esquerda (imagem) */
+.container-left {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.container-left img {
+    width: 100%;
+    max-width: 400px;
+}
+
+/* Coluna da direita (textos e botão) */
+.container-right {
+    flex: 1;
+    text-align: left;
+    padding-left: 50px;
+}
+
+h1 {
+    font-size: 80px;
+    font-weight: 900;
+    color: #515151;
+}
+
+h2 {
+    font-size: 30px;
+    font-weight: 400;
+    color: #515151;
+    margin-top: 10px;
+}
+
+p {
+    font-size: 16px;
+    color: #848484;
+    margin-top: 10px;
+    max-width: 400px;
+    line-height: 1.5;
+}
+
+button {
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+/* Botão "EXPLORE" (btn-primary) */
+.btn-primary {
+    margin-top: 20px;
+    font-size: 22px;
+    width: 239px;
+    height: 64px;
+    border-radius: 20px;
+    background-color: #ADFF00;
+    color: #000;
+}
+
+.btn-primary:hover {
+    background-color: #00ff00;
+}
+
+/* Responsividade */
+@media (max-width: 900px) {
+
+    /* Menu de navegação em coluna */
+    nav {
+        display: none;
+      
+    }
+    header {
+        padding: 10px;
+    }
+    .btn-secondary {
+        margin-top: 10px;
+    }
+
+    /* Container em coluna */
+    .container {
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+    }
+
+    /* Imagem menor no mobile */
+    .container-left img {
+        max-width: 300px;
+    }
+
+    /* Textos centralizados */
+    .container-right {
+        padding-left: 0;
+        margin-top: 20px;
+    }
+
+    h1 {
+        font-size: 50px;
+    }
+
+    h2 {
+        font-size: 24px;
+    }
+
+    p {
+        font-size: 14px;
+    }
+
+    .btn-primary {
+        font-size: 18px;
+        width: 180px;
+        height: 50px;
+    }
+}
+
